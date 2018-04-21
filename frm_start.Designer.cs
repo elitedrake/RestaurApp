@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -96,7 +96,6 @@
             this.lblSelectedTable = new System.Windows.Forms.Label();
             this.lblIDSelectedTable = new System.Windows.Forms.Label();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.lblMensajeItbis = new System.Windows.Forms.Label();
             this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -114,12 +113,8 @@
             this.lblIDArticulo = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.tabPane2 = new DevExpress.XtraBars.Navigation.TabPane();
-            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.PanelCategorias = new System.Windows.Forms.Panel();
-            this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.PanelSubCategorias = new System.Windows.Forms.Panel();
-            this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.lblMensajeItbis = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.btnLimpiarBusqueda = new DevExpress.XtraEditors.SimpleButton();
             this.DgvConsultaArticulos = new System.Windows.Forms.DataGridView();
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
@@ -128,6 +123,12 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.path = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscar = new DevExpress.XtraEditors.TextEdit();
+            this.tabPane2 = new DevExpress.XtraBars.Navigation.TabPane();
+            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.PanelCategorias = new System.Windows.Forms.Panel();
+            this.tabNavigationPage5 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.PanelSubCategorias = new System.Windows.Forms.Panel();
+            this.tabNavigationPage6 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.PanelArticulos = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -143,9 +144,9 @@
             this.lblSubCategoria = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lblGrandTotal = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblDelivery = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.lblPropinaLegal = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -193,13 +194,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkNota.Properties)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultaArticulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBuscar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).BeginInit();
             this.tabPane2.SuspendLayout();
             this.tabNavigationPage4.SuspendLayout();
             this.tabNavigationPage5.SuspendLayout();
             this.tabNavigationPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultaArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBuscar.Properties)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -829,13 +830,12 @@
             // tabNavigationPage3
             // 
             this.tabNavigationPage3.Caption = "Menú";
-            this.tabNavigationPage3.Controls.Add(this.lblMensajeItbis);
             this.tabNavigationPage3.Controls.Add(this.toggleSwitch1);
             this.tabNavigationPage3.Controls.Add(this.panel9);
             this.tabNavigationPage3.Controls.Add(this.label30);
-            this.tabNavigationPage3.Controls.Add(this.label21);
+            this.tabNavigationPage3.Controls.Add(this.lblGrandTotal);
             this.tabNavigationPage3.Controls.Add(this.label22);
-            this.tabNavigationPage3.Controls.Add(this.label19);
+            this.tabNavigationPage3.Controls.Add(this.lblDelivery);
             this.tabNavigationPage3.Controls.Add(this.label20);
             this.tabNavigationPage3.Controls.Add(this.lblPropinaLegal);
             this.tabNavigationPage3.Controls.Add(this.label18);
@@ -850,20 +850,10 @@
             this.tabNavigationPage3.Name = "tabNavigationPage3";
             this.tabNavigationPage3.Size = new System.Drawing.Size(1213, 526);
             // 
-            // lblMensajeItbis
-            // 
-            this.lblMensajeItbis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblMensajeItbis.AutoSize = true;
-            this.lblMensajeItbis.Location = new System.Drawing.Point(9, 502);
-            this.lblMensajeItbis.Name = "lblMensajeItbis";
-            this.lblMensajeItbis.Size = new System.Drawing.Size(185, 13);
-            this.lblMensajeItbis.TabIndex = 64;
-            this.lblMensajeItbis.Text = "Los precios del menú no incluyen itbis";
-            // 
             // toggleSwitch1
             // 
             this.toggleSwitch1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.toggleSwitch1.Location = new System.Drawing.Point(10, 455);
+            this.toggleSwitch1.Location = new System.Drawing.Point(10, 487);
             this.toggleSwitch1.MenuManager = this.ribbon;
             this.toggleSwitch1.Name = "toggleSwitch1";
             this.toggleSwitch1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Far;
@@ -1062,6 +1052,8 @@
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.lblMensajeItbis);
+            this.panel13.Controls.Add(this.label15);
             this.panel13.Controls.Add(this.btnLimpiarBusqueda);
             this.panel13.Controls.Add(this.DgvConsultaArticulos);
             this.panel13.Controls.Add(this.txtBuscar);
@@ -1072,81 +1064,31 @@
             this.panel13.Size = new System.Drawing.Size(764, 442);
             this.panel13.TabIndex = 1;
             // 
-            // tabPane2
+            // lblMensajeItbis
             // 
-            this.tabPane2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabPane2.Controls.Add(this.tabNavigationPage4);
-            this.tabPane2.Controls.Add(this.tabNavigationPage5);
-            this.tabPane2.Controls.Add(this.tabNavigationPage6);
-            this.tabPane2.Location = new System.Drawing.Point(0, 84);
-            this.tabPane2.Name = "tabPane2";
-            this.tabPane2.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.tabNavigationPage4,
-            this.tabNavigationPage5,
-            this.tabNavigationPage6});
-            this.tabPane2.RegularSize = new System.Drawing.Size(764, 358);
-            this.tabPane2.SelectedPage = this.tabNavigationPage4;
-            this.tabPane2.Size = new System.Drawing.Size(764, 358);
-            this.tabPane2.TabIndex = 3;
-            this.tabPane2.Text = "Categorías";
-            this.tabPane2.SelectedPageIndexChanged += new System.EventHandler(this.tabPane2_SelectedPageIndexChanged);
+            this.lblMensajeItbis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMensajeItbis.AutoSize = true;
+            this.lblMensajeItbis.Location = new System.Drawing.Point(572, 8);
+            this.lblMensajeItbis.Name = "lblMensajeItbis";
+            this.lblMensajeItbis.Size = new System.Drawing.Size(185, 13);
+            this.lblMensajeItbis.TabIndex = 64;
+            this.lblMensajeItbis.Text = "Los precios del menú no incluyen itbis";
             // 
-            // tabNavigationPage4
+            // label15
             // 
-            this.tabNavigationPage4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.tabNavigationPage4.Appearance.Options.UseBackColor = true;
-            this.tabNavigationPage4.AutoSize = true;
-            this.tabNavigationPage4.Caption = "Categorías";
-            this.tabNavigationPage4.Controls.Add(this.PanelCategorias);
-            this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(746, 313);
-            // 
-            // PanelCategorias
-            // 
-            this.PanelCategorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelCategorias.AutoScroll = true;
-            this.PanelCategorias.BackColor = System.Drawing.Color.Black;
-            this.PanelCategorias.Location = new System.Drawing.Point(0, 0);
-            this.PanelCategorias.Name = "PanelCategorias";
-            this.PanelCategorias.Size = new System.Drawing.Size(743, 209);
-            this.PanelCategorias.TabIndex = 1;
-            this.PanelCategorias.Resize += new System.EventHandler(this.PanelCategorias_Resize);
-            // 
-            // tabNavigationPage5
-            // 
-            this.tabNavigationPage5.Caption = "SubCategorías";
-            this.tabNavigationPage5.Controls.Add(this.PanelSubCategorias);
-            this.tabNavigationPage5.Name = "tabNavigationPage5";
-            this.tabNavigationPage5.Size = new System.Drawing.Size(746, 313);
-            // 
-            // PanelSubCategorias
-            // 
-            this.PanelSubCategorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelSubCategorias.AutoScroll = true;
-            this.PanelSubCategorias.BackColor = System.Drawing.Color.Black;
-            this.PanelSubCategorias.Location = new System.Drawing.Point(0, 0);
-            this.PanelSubCategorias.Name = "PanelSubCategorias";
-            this.PanelSubCategorias.Size = new System.Drawing.Size(746, 209);
-            this.PanelSubCategorias.TabIndex = 2;
-            // 
-            // tabNavigationPage6
-            // 
-            this.tabNavigationPage6.Caption = "Productos";
-            this.tabNavigationPage6.Controls.Add(this.PanelArticulos);
-            this.tabNavigationPage6.Name = "tabNavigationPage6";
-            this.tabNavigationPage6.Size = new System.Drawing.Size(746, 313);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 6);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 15);
+            this.label15.TabIndex = 65;
+            this.label15.Text = "Consulta rápida";
             // 
             // btnLimpiarBusqueda
             // 
             this.btnLimpiarBusqueda.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiarBusqueda.ImageOptions.Image")));
             this.btnLimpiarBusqueda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnLimpiarBusqueda.Location = new System.Drawing.Point(528, 6);
+            this.btnLimpiarBusqueda.Location = new System.Drawing.Point(528, 4);
             this.btnLimpiarBusqueda.Name = "btnLimpiarBusqueda";
             this.btnLimpiarBusqueda.Size = new System.Drawing.Size(38, 20);
             this.btnLimpiarBusqueda.TabIndex = 30;
@@ -1178,7 +1120,7 @@
             this.DgvConsultaArticulos.RowTemplate.Height = 32;
             this.DgvConsultaArticulos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DgvConsultaArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvConsultaArticulos.Size = new System.Drawing.Size(558, 251);
+            this.DgvConsultaArticulos.Size = new System.Drawing.Size(558, 24);
             this.DgvConsultaArticulos.TabIndex = 29;
             this.DgvConsultaArticulos.Visible = false;
             this.DgvConsultaArticulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvConsultaArticulos_CellClick);
@@ -1192,9 +1134,9 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewTextBoxColumn3.HeaderText = "ID";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -1204,8 +1146,8 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewTextBoxColumn5.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -1231,29 +1173,93 @@
             // txtBuscar
             // 
             this.txtBuscar.EditValue = "Escriba el artículo que desea buscar";
-            this.txtBuscar.Location = new System.Drawing.Point(9, 6);
+            this.txtBuscar.Location = new System.Drawing.Point(98, 4);
             this.txtBuscar.MenuManager = this.ribbon;
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtBuscar.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.txtBuscar.Properties.Appearance.Options.UseFont = true;
             this.txtBuscar.Properties.Appearance.Options.UseForeColor = true;
-            this.txtBuscar.Size = new System.Drawing.Size(517, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(428, 20);
             this.txtBuscar.TabIndex = 3;
             this.txtBuscar.EditValueChanged += new System.EventHandler(this.txtBuscar_EditValueChanged);
             this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
-            // PanelArticulos
+            // tabPane2
             // 
-            this.PanelArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabPane2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabPane2.Controls.Add(this.tabNavigationPage4);
+            this.tabPane2.Controls.Add(this.tabNavigationPage5);
+            this.tabPane2.Controls.Add(this.tabNavigationPage6);
+            this.tabPane2.Location = new System.Drawing.Point(0, 29);
+            this.tabPane2.Name = "tabPane2";
+            this.tabPane2.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.tabNavigationPage4,
+            this.tabNavigationPage5,
+            this.tabNavigationPage6});
+            this.tabPane2.RegularSize = new System.Drawing.Size(773, 301);
+            this.tabPane2.SelectedPage = this.tabNavigationPage4;
+            this.tabPane2.Size = new System.Drawing.Size(773, 301);
+            this.tabPane2.TabIndex = 3;
+            this.tabPane2.Text = "Categorías";
+            this.tabPane2.SelectedPageIndexChanged += new System.EventHandler(this.tabPane2_SelectedPageIndexChanged);
+            // 
+            // tabNavigationPage4
+            // 
+            this.tabNavigationPage4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.tabNavigationPage4.Appearance.Options.UseBackColor = true;
+            this.tabNavigationPage4.AutoSize = true;
+            this.tabNavigationPage4.Caption = "Categorías";
+            this.tabNavigationPage4.Controls.Add(this.PanelCategorias);
+            this.tabNavigationPage4.Name = "tabNavigationPage4";
+            this.tabNavigationPage4.Size = new System.Drawing.Size(755, 256);
+            // 
+            // PanelCategorias
+            // 
+            this.PanelCategorias.AutoScroll = true;
+            this.PanelCategorias.BackColor = System.Drawing.Color.Black;
+            this.PanelCategorias.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelCategorias.Location = new System.Drawing.Point(0, 0);
+            this.PanelCategorias.Name = "PanelCategorias";
+            this.PanelCategorias.Size = new System.Drawing.Size(755, 256);
+            this.PanelCategorias.TabIndex = 1;
+            this.PanelCategorias.Resize += new System.EventHandler(this.PanelCategorias_Resize);
+            // 
+            // tabNavigationPage5
+            // 
+            this.tabNavigationPage5.Caption = "SubCategorías";
+            this.tabNavigationPage5.Controls.Add(this.PanelSubCategorias);
+            this.tabNavigationPage5.Name = "tabNavigationPage5";
+            this.tabNavigationPage5.Size = new System.Drawing.Size(746, 256);
+            // 
+            // PanelSubCategorias
+            // 
+            this.PanelSubCategorias.AutoScroll = true;
+            this.PanelSubCategorias.BackColor = System.Drawing.Color.Black;
+            this.PanelSubCategorias.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelSubCategorias.Location = new System.Drawing.Point(0, 0);
+            this.PanelSubCategorias.Name = "PanelSubCategorias";
+            this.PanelSubCategorias.Size = new System.Drawing.Size(746, 256);
+            this.PanelSubCategorias.TabIndex = 2;
+            // 
+            // tabNavigationPage6
+            // 
+            this.tabNavigationPage6.Caption = "Productos";
+            this.tabNavigationPage6.Controls.Add(this.PanelArticulos);
+            this.tabNavigationPage6.Name = "tabNavigationPage6";
+            this.tabNavigationPage6.Size = new System.Drawing.Size(746, 200);
+            // 
+            // PanelArticulos
+            // 
             this.PanelArticulos.AutoScroll = true;
             this.PanelArticulos.BackColor = System.Drawing.Color.Black;
+            this.PanelArticulos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelArticulos.Location = new System.Drawing.Point(0, 0);
             this.PanelArticulos.Name = "PanelArticulos";
-            this.PanelArticulos.Size = new System.Drawing.Size(746, 209);
+            this.PanelArticulos.Size = new System.Drawing.Size(746, 200);
             this.PanelArticulos.TabIndex = 2;
             // 
             // panel12
@@ -1402,51 +1408,51 @@
             // 
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(9, 439);
+            this.label30.Location = new System.Drawing.Point(9, 472);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(144, 13);
             this.label30.TabIndex = 63;
             this.label30.Text = "Despachar todo al estar listo";
             // 
-            // label21
+            // lblGrandTotal
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label21.Location = new System.Drawing.Point(318, 501);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(125, 15);
-            this.label21.TabIndex = 38;
-            this.label21.Text = "RD$ 0.00";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblGrandTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblGrandTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrandTotal.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblGrandTotal.Location = new System.Drawing.Point(318, 503);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(125, 15);
+            this.lblGrandTotal.TabIndex = 38;
+            this.lblGrandTotal.Text = "0";
+            this.lblGrandTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label22
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(240, 502);
+            this.label22.Location = new System.Drawing.Point(240, 506);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(55, 13);
             this.label22.TabIndex = 37;
             this.label22.Text = "Gran total";
             // 
-            // label19
+            // lblDelivery
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label19.Location = new System.Drawing.Point(318, 486);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(125, 15);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "RD$ 0.00";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblDelivery.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDelivery.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblDelivery.Location = new System.Drawing.Point(318, 469);
+            this.lblDelivery.Name = "lblDelivery";
+            this.lblDelivery.Size = new System.Drawing.Size(125, 15);
+            this.lblDelivery.TabIndex = 36;
+            this.lblDelivery.Text = "0";
+            this.lblDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label20
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(240, 487);
+            this.label20.Location = new System.Drawing.Point(240, 469);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(46, 13);
             this.label20.TabIndex = 35;
@@ -1457,18 +1463,18 @@
             this.lblPropinaLegal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPropinaLegal.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropinaLegal.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblPropinaLegal.Location = new System.Drawing.Point(318, 471);
+            this.lblPropinaLegal.Location = new System.Drawing.Point(318, 450);
             this.lblPropinaLegal.Name = "lblPropinaLegal";
             this.lblPropinaLegal.Size = new System.Drawing.Size(125, 15);
             this.lblPropinaLegal.TabIndex = 34;
-            this.lblPropinaLegal.Text = "RD$ 0.00";
+            this.lblPropinaLegal.Text = "0";
             this.lblPropinaLegal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label18
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(240, 472);
+            this.label18.Location = new System.Drawing.Point(240, 450);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 13);
             this.label18.TabIndex = 33;
@@ -1479,18 +1485,18 @@
             this.lblItbis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblItbis.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItbis.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblItbis.Location = new System.Drawing.Point(318, 456);
+            this.lblItbis.Location = new System.Drawing.Point(318, 486);
             this.lblItbis.Name = "lblItbis";
             this.lblItbis.Size = new System.Drawing.Size(125, 15);
             this.lblItbis.TabIndex = 32;
-            this.lblItbis.Text = "RD$ 0.00";
+            this.lblItbis.Text = "0";
             this.lblItbis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label16
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(240, 457);
+            this.label16.Location = new System.Drawing.Point(240, 486);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(28, 13);
             this.label16.TabIndex = 31;
@@ -1501,18 +1507,18 @@
             this.lblSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSubtotal.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtotal.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblSubtotal.Location = new System.Drawing.Point(318, 441);
+            this.lblSubtotal.Location = new System.Drawing.Point(318, 432);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(125, 15);
             this.lblSubtotal.TabIndex = 30;
-            this.lblSubtotal.Text = "RD$ 0.00";
+            this.lblSubtotal.Text = "0";
             this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(240, 442);
+            this.label14.Location = new System.Drawing.Point(240, 433);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(47, 13);
             this.label14.TabIndex = 29;
@@ -1545,7 +1551,7 @@
             this.DgvArticulos.RowHeadersVisible = false;
             this.DgvArticulos.RowTemplate.Height = 32;
             this.DgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvArticulos.Size = new System.Drawing.Size(434, 398);
+            this.DgvArticulos.Size = new System.Drawing.Size(434, 399);
             this.DgvArticulos.TabIndex = 28;
             this.DgvArticulos.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DgvArticulos_RowPostPaint);
             // 
@@ -1565,9 +1571,9 @@
             // 
             // IDArticulo
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.IDArticulo.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.IDArticulo.DefaultCellStyle = dataGridViewCellStyle23;
             this.IDArticulo.HeaderText = "ID";
             this.IDArticulo.Name = "IDArticulo";
             this.IDArticulo.ReadOnly = true;
@@ -1586,8 +1592,8 @@
             // 
             // Descripcion
             // 
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Descripcion.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Descripcion.DefaultCellStyle = dataGridViewCellStyle24;
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
@@ -1692,14 +1698,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkNota.Properties)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultaArticulos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBuscar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane2)).EndInit();
             this.tabPane2.ResumeLayout(false);
             this.tabPane2.PerformLayout();
             this.tabNavigationPage4.ResumeLayout(false);
             this.tabNavigationPage5.ResumeLayout(false);
             this.tabNavigationPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvConsultaArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBuscar.Properties)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
@@ -1773,9 +1780,9 @@
         private DevExpress.XtraBars.BarButtonItem btnDeleteCuenta;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private System.Windows.Forms.DataGridView DgvArticulos;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblGrandTotal;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblDelivery;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label lblPropinaLegal;
         private System.Windows.Forms.Label label18;
@@ -1844,5 +1851,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItbisDgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.Label lblPrecioSeleccionado;
+        private System.Windows.Forms.Label label15;
     }
 }

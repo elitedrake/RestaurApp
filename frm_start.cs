@@ -66,10 +66,20 @@ namespace LearningCSharp
             cmd = new MySqlCommand("SELECT valuedouble FROM restaurant.configuracion where idconfiguracion=2", MyConnection);
             porcientoley = Convert.ToString(cmd.ExecuteScalar());
 
-           
+            ActualizarCampos();
 
             MyConnection.Close();
         }
+
+
+       private void ActualizarCampos()
+       {
+           lblSubtotal.Text = Convert.ToDouble(0).ToString("C");
+           lblItbis.Text = Convert.ToDouble(0).ToString("C");
+           lblPropinaLegal.Text = Convert.ToDouble(0).ToString("C");
+           lblDelivery.Text = Convert.ToDouble(0).ToString("C");
+           lblGrandTotal.Text = Convert.ToDouble(0).ToString("C");
+       }
 
         private void GetCorrectSizeRow()
         {
@@ -1133,7 +1143,13 @@ namespace LearningCSharp
                 lblIDCurrentArticulo.Text= "";
                 lblCurrentArticulo.Text ="";
                 lblPrecio.Text = "";
-                txtBuscar.Text = "";
+
+                if (txtBuscar.Focused == true)
+                {
+                    txtBuscar.Text = "Escriba el artículo que desea buscar";
+                    txtBuscar.ForeColor = Color.Gray;
+                }
+                
                 btnLimpiarBusqueda.Visible = false;
                 DgvConsultaArticulos.Visible = false;
             }
@@ -1149,8 +1165,12 @@ namespace LearningCSharp
             {
                 foreach (DataGridViewRow Rw in DgvArticulos.Rows)
                 {
-                    subtotal += Convert.ToDouble(Convert.ToString(double.Parse(Rw.Cells[5].Value.ToString(), System.Globalization.NumberStyles.Currency)));
-                    itbis += Convert.ToDouble(Convert.ToString(double.Parse(Rw.Cells[6].Value.ToString(), System.Globalization.NumberStyles.Currency)));
+                    if (Rw.Cells[1].Value.ToString() == "1")
+                    {
+                        subtotal += Convert.ToDouble(Convert.ToString(double.Parse(Rw.Cells[5].Value.ToString(), System.Globalization.NumberStyles.Currency)));
+                        itbis += Convert.ToDouble(Convert.ToString(double.Parse(Rw.Cells[6].Value.ToString(), System.Globalization.NumberStyles.Currency)));
+                    }
+                    
                 }
 
                 lblSubtotal.Text = subtotal.ToString("C");
@@ -1173,6 +1193,8 @@ namespace LearningCSharp
             {
                 lblPropinaLegal.Text = Convert.ToDouble(0).ToString("C");
             }
+
+            lblGrandTotal.Text = Convert.ToDouble(Convert.ToDouble(Convert.ToString(double.Parse(lblSubtotal.Text, System.Globalization.NumberStyles.Currency))) + Convert.ToDouble(Convert.ToString(double.Parse(lblItbis.Text, System.Globalization.NumberStyles.Currency))) + Convert.ToDouble(Convert.ToString(double.Parse(lblPropinaLegal.Text, System.Globalization.NumberStyles.Currency))) + Convert.ToDouble(Convert.ToString(double.Parse(lblDelivery.Text, System.Globalization.NumberStyles.Currency)))).ToString("C");
         }
 
         private void FillArticulos()
@@ -1473,6 +1495,8 @@ namespace LearningCSharp
           private void txtLimpiarBusqueda_Click(object sender, EventArgs e)
           {
               txtBuscar.Text = "";
+              txtBuscar.Text = "Escriba el artículo que desea buscar";
+              txtBuscar.ForeColor = Color.Gray;
           }
 
           private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
