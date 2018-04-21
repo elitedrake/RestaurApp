@@ -1433,7 +1433,16 @@ namespace LearningCSharp
                 }
                
             }
-            DgvConsultaArticulos.Size = new Size(DgvConsultaArticulos.Size.Width, 21 + DgvConsultaArticulos.RowTemplate.Height * DgvConsultaArticulos.Rows.Count);
+            if (DgvConsultaArticulos.Rows.Count < 15)
+            {
+                DgvConsultaArticulos.Size = new Size(DgvConsultaArticulos.Size.Width, 21 + DgvConsultaArticulos.RowTemplate.Height * DgvConsultaArticulos.Rows.Count);
+            }
+
+            else
+            {
+                DgvConsultaArticulos.Size = new Size(DgvConsultaArticulos.Size.Width, 21 + DgvConsultaArticulos.RowTemplate.Height * 15);
+            }
+            
         }
 
           private void DgvConsultaArticulos_CellClick(object sender, DataGridViewCellEventArgs e)
