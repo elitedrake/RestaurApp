@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -96,10 +96,13 @@
             this.lblSelectedTable = new System.Windows.Forms.Label();
             this.lblIDSelectedTable = new System.Windows.Forms.Label();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.btnLimpiarArticulos = new DevExpress.XtraEditors.SimpleButton();
+            this.btnQuitarArticulo = new DevExpress.XtraEditors.SimpleButton();
+            this.btnModificarArticulo = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.txtNota = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.lblPrecioSeleccionado = new System.Windows.Forms.Label();
             this.PanelArticuloSeleccionado = new DevExpress.XtraEditors.GroupControl();
@@ -111,6 +114,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.lblArticulo = new System.Windows.Forms.Label();
             this.lblIDArticulo = new System.Windows.Forms.Label();
+            this.txtNota = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.lblMensajeItbis = new System.Windows.Forms.Label();
@@ -830,6 +834,10 @@
             // tabNavigationPage3
             // 
             this.tabNavigationPage3.Caption = "Menú";
+            this.tabNavigationPage3.Controls.Add(this.btnLimpiarArticulos);
+            this.tabNavigationPage3.Controls.Add(this.btnQuitarArticulo);
+            this.tabNavigationPage3.Controls.Add(this.btnModificarArticulo);
+            this.tabNavigationPage3.Controls.Add(this.simpleButton2);
             this.tabNavigationPage3.Controls.Add(this.toggleSwitch1);
             this.tabNavigationPage3.Controls.Add(this.panel9);
             this.tabNavigationPage3.Controls.Add(this.label30);
@@ -849,6 +857,64 @@
             this.tabNavigationPage3.Controls.Add(this.lblIDCuentaSeleccionada);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
             this.tabNavigationPage3.Size = new System.Drawing.Size(1213, 526);
+            // 
+            // btnLimpiarArticulos
+            // 
+            this.btnLimpiarArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLimpiarArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpiarArticulos.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.btnLimpiarArticulos.Location = new System.Drawing.Point(449, 474);
+            this.btnLimpiarArticulos.LookAndFeel.SkinMaskColor = System.Drawing.Color.Red;
+            this.btnLimpiarArticulos.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Turquoise;
+            this.btnLimpiarArticulos.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnLimpiarArticulos.Name = "btnLimpiarArticulos";
+            this.btnLimpiarArticulos.Size = new System.Drawing.Size(177, 51);
+            this.btnLimpiarArticulos.TabIndex = 67;
+            this.btnLimpiarArticulos.Text = "Limpiar todos los artículos";
+            this.btnLimpiarArticulos.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
+            // btnQuitarArticulo
+            // 
+            this.btnQuitarArticulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnQuitarArticulo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuitarArticulo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.btnQuitarArticulo.Location = new System.Drawing.Point(632, 474);
+            this.btnQuitarArticulo.LookAndFeel.SkinMaskColor = System.Drawing.Color.Red;
+            this.btnQuitarArticulo.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Turquoise;
+            this.btnQuitarArticulo.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnQuitarArticulo.Name = "btnQuitarArticulo";
+            this.btnQuitarArticulo.Size = new System.Drawing.Size(118, 51);
+            this.btnQuitarArticulo.TabIndex = 66;
+            this.btnQuitarArticulo.Text = "Quitar artículo";
+            this.btnQuitarArticulo.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
+            // btnModificarArticulo
+            // 
+            this.btnModificarArticulo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnModificarArticulo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificarArticulo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btnModificarArticulo.Location = new System.Drawing.Point(756, 474);
+            this.btnModificarArticulo.LookAndFeel.SkinMaskColor = System.Drawing.Color.Red;
+            this.btnModificarArticulo.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Turquoise;
+            this.btnModificarArticulo.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnModificarArticulo.Name = "btnModificarArticulo";
+            this.btnModificarArticulo.Size = new System.Drawing.Size(132, 51);
+            this.btnModificarArticulo.TabIndex = 65;
+            this.btnModificarArticulo.Text = "Modificar artículo";
+            this.btnModificarArticulo.Click += new System.EventHandler(this.btnModificarArticulo_Click);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(1085, 475);
+            this.simpleButton2.LookAndFeel.SkinMaskColor = System.Drawing.Color.DodgerBlue;
+            this.simpleButton2.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(128, 51);
+            this.simpleButton2.TabIndex = 64;
+            this.simpleButton2.Text = "Procesar";
             // 
             // toggleSwitch1
             // 
@@ -872,15 +938,14 @@
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Location = new System.Drawing.Point(449, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(764, 526);
+            this.panel9.Size = new System.Drawing.Size(764, 465);
             this.panel9.TabIndex = 39;
             // 
             // panel10
             // 
             this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.txtNota);
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel10.Controls.Add(this.label29);
             this.panel10.Controls.Add(this.lblPrecioSeleccionado);
             this.panel10.Controls.Add(this.PanelArticuloSeleccionado);
@@ -892,21 +957,11 @@
             this.panel10.Controls.Add(this.label25);
             this.panel10.Controls.Add(this.lblArticulo);
             this.panel10.Controls.Add(this.lblIDArticulo);
-            this.panel10.Location = new System.Drawing.Point(0, 414);
+            this.panel10.Controls.Add(this.txtNota);
+            this.panel10.Location = new System.Drawing.Point(0, 353);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(764, 112);
             this.panel10.TabIndex = 0;
-            // 
-            // txtNota
-            // 
-            this.txtNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtNota.Location = new System.Drawing.Point(389, 44);
-            this.txtNota.Multiline = true;
-            this.txtNota.Name = "txtNota";
-            this.txtNota.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtNota.Size = new System.Drawing.Size(234, 60);
-            this.txtNota.TabIndex = 6;
-            this.txtNota.Visible = false;
             // 
             // label29
             // 
@@ -942,8 +997,10 @@
             this.btnAgregarArticulo.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnAgregarArticulo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarArticulo.ImageOptions.Image")));
             this.btnAgregarArticulo.Location = new System.Drawing.Point(629, 9);
+            this.btnAgregarArticulo.LookAndFeel.SkinMaskColor = System.Drawing.Color.LightYellow;
+            this.btnAgregarArticulo.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnAgregarArticulo.Name = "btnAgregarArticulo";
-            this.btnAgregarArticulo.Size = new System.Drawing.Size(126, 93);
+            this.btnAgregarArticulo.Size = new System.Drawing.Size(135, 93);
             this.btnAgregarArticulo.TabIndex = 7;
             this.btnAgregarArticulo.Text = "Agregar F10";
             this.btnAgregarArticulo.Click += new System.EventHandler(this.btnAgregarArticulo_Click);
@@ -1040,6 +1097,17 @@
             this.lblIDArticulo.Size = new System.Drawing.Size(0, 15);
             this.lblIDArticulo.TabIndex = 47;
             // 
+            // txtNota
+            // 
+            this.txtNota.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtNota.Location = new System.Drawing.Point(389, 44);
+            this.txtNota.Multiline = true;
+            this.txtNota.Name = "txtNota";
+            this.txtNota.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtNota.Size = new System.Drawing.Size(301, 60);
+            this.txtNota.TabIndex = 6;
+            this.txtNota.Visible = false;
+            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.panel13);
@@ -1047,7 +1115,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(764, 526);
+            this.panel11.Size = new System.Drawing.Size(764, 465);
             this.panel11.TabIndex = 1;
             // 
             // panel13
@@ -1061,7 +1129,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 84);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(764, 442);
+            this.panel13.Size = new System.Drawing.Size(764, 381);
             this.panel13.TabIndex = 1;
             // 
             // lblMensajeItbis
@@ -1120,7 +1188,7 @@
             this.DgvConsultaArticulos.RowTemplate.Height = 32;
             this.DgvConsultaArticulos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DgvConsultaArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvConsultaArticulos.Size = new System.Drawing.Size(558, 24);
+            this.DgvConsultaArticulos.Size = new System.Drawing.Size(558, 0);
             this.DgvConsultaArticulos.TabIndex = 29;
             this.DgvConsultaArticulos.Visible = false;
             this.DgvConsultaArticulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvConsultaArticulos_CellClick);
@@ -1134,9 +1202,9 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn3.HeaderText = "ID";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
@@ -1146,8 +1214,8 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn5.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -1200,9 +1268,9 @@
             this.tabNavigationPage4,
             this.tabNavigationPage5,
             this.tabNavigationPage6});
-            this.tabPane2.RegularSize = new System.Drawing.Size(773, 301);
+            this.tabPane2.RegularSize = new System.Drawing.Size(773, 240);
             this.tabPane2.SelectedPage = this.tabNavigationPage4;
-            this.tabPane2.Size = new System.Drawing.Size(773, 301);
+            this.tabPane2.Size = new System.Drawing.Size(773, 240);
             this.tabPane2.TabIndex = 3;
             this.tabPane2.Text = "Categorías";
             this.tabPane2.SelectedPageIndexChanged += new System.EventHandler(this.tabPane2_SelectedPageIndexChanged);
@@ -1215,7 +1283,7 @@
             this.tabNavigationPage4.Caption = "Categorías";
             this.tabNavigationPage4.Controls.Add(this.PanelCategorias);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(755, 256);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(755, 195);
             // 
             // PanelCategorias
             // 
@@ -1224,7 +1292,7 @@
             this.PanelCategorias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelCategorias.Location = new System.Drawing.Point(0, 0);
             this.PanelCategorias.Name = "PanelCategorias";
-            this.PanelCategorias.Size = new System.Drawing.Size(755, 256);
+            this.PanelCategorias.Size = new System.Drawing.Size(755, 195);
             this.PanelCategorias.TabIndex = 1;
             this.PanelCategorias.Resize += new System.EventHandler(this.PanelCategorias_Resize);
             // 
@@ -1419,7 +1487,7 @@
             this.lblGrandTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblGrandTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrandTotal.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblGrandTotal.Location = new System.Drawing.Point(318, 503);
+            this.lblGrandTotal.Location = new System.Drawing.Point(318, 504);
             this.lblGrandTotal.Name = "lblGrandTotal";
             this.lblGrandTotal.Size = new System.Drawing.Size(125, 15);
             this.lblGrandTotal.TabIndex = 38;
@@ -1430,7 +1498,7 @@
             // 
             this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(240, 506);
+            this.label22.Location = new System.Drawing.Point(240, 507);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(55, 13);
             this.label22.TabIndex = 37;
@@ -1441,7 +1509,7 @@
             this.lblDelivery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDelivery.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDelivery.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblDelivery.Location = new System.Drawing.Point(318, 469);
+            this.lblDelivery.Location = new System.Drawing.Point(318, 468);
             this.lblDelivery.Name = "lblDelivery";
             this.lblDelivery.Size = new System.Drawing.Size(125, 15);
             this.lblDelivery.TabIndex = 36;
@@ -1452,7 +1520,7 @@
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(240, 469);
+            this.label20.Location = new System.Drawing.Point(240, 468);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(46, 13);
             this.label20.TabIndex = 35;
@@ -1463,7 +1531,7 @@
             this.lblPropinaLegal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPropinaLegal.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropinaLegal.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblPropinaLegal.Location = new System.Drawing.Point(318, 450);
+            this.lblPropinaLegal.Location = new System.Drawing.Point(318, 486);
             this.lblPropinaLegal.Name = "lblPropinaLegal";
             this.lblPropinaLegal.Size = new System.Drawing.Size(125, 15);
             this.lblPropinaLegal.TabIndex = 34;
@@ -1474,7 +1542,7 @@
             // 
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(240, 450);
+            this.label18.Location = new System.Drawing.Point(240, 486);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 13);
             this.label18.TabIndex = 33;
@@ -1485,7 +1553,7 @@
             this.lblItbis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblItbis.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblItbis.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblItbis.Location = new System.Drawing.Point(318, 486);
+            this.lblItbis.Location = new System.Drawing.Point(318, 450);
             this.lblItbis.Name = "lblItbis";
             this.lblItbis.Size = new System.Drawing.Size(125, 15);
             this.lblItbis.TabIndex = 32;
@@ -1496,7 +1564,7 @@
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(240, 486);
+            this.label16.Location = new System.Drawing.Point(240, 450);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(28, 13);
             this.label16.TabIndex = 31;
@@ -1571,9 +1639,9 @@
             // 
             // IDArticulo
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.IDArticulo.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.IDArticulo.DefaultCellStyle = dataGridViewCellStyle7;
             this.IDArticulo.HeaderText = "ID";
             this.IDArticulo.Name = "IDArticulo";
             this.IDArticulo.ReadOnly = true;
@@ -1592,8 +1660,8 @@
             // 
             // Descripcion
             // 
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Descripcion.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Descripcion.DefaultCellStyle = dataGridViewCellStyle8;
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
@@ -1852,5 +1920,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.Label lblPrecioSeleccionado;
         private System.Windows.Forms.Label label15;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnLimpiarArticulos;
+        private DevExpress.XtraEditors.SimpleButton btnQuitarArticulo;
+        private DevExpress.XtraEditors.SimpleButton btnModificarArticulo;
     }
 }

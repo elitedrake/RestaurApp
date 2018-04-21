@@ -1505,6 +1505,125 @@ namespace LearningCSharp
               frm_tmp.ShowDialog();
           }
 
+          private void simpleButton6_Click(object sender, EventArgs e)
+          {
+              if (DgvArticulos.Rows.Count > 0)
+              {
+                  if (DgvArticulos.Rows[0].Cells[0].Value.ToString() != "")
+                  {
+                      MessageBox.Show(this, "No es posible eliminar los artículos registrados ya que han sido procesador satisfactoriamente.", "No se puede limpiar registros guardados");
+                  }
+
+                  else
+                  {
+                      DialogResult result = MessageBox.Show("Estás seguro que deseas eliminar los artículos incluidos en la cuenta?", "Limpiar artículos", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                      if (result == DialogResult.Yes)
+                      {
+                          DgvArticulos.Rows.Clear();
+                          SumArticulos();
+                      }
+                    
+                  }
+              }
+          }
+
+          private void simpleButton5_Click(object sender, EventArgs e)
+          {
+              if (DgvArticulos.SelectedRows.Count == 0)
+              {
+                  MessageBox.Show(this, "Por favor seleccione el artículo que desea eliminar de la cuenta.", "Quitar artículo");
+
+              }
+
+              else
+
+              {
+                  if (DgvArticulos.SelectedRows[0].Cells[0].Value.ToString() == "1")
+                  {
+                      MessageBox.Show("Este artículo no puede ser eliminado ya que ha sido procesado satisfactoriamente.", "Quitar artículo");
+                  }
+
+                  else
+
+                  {
+                      DialogResult result = MessageBox.Show(this,"Estás seguro que deseas eliminar el artículo [" + DgvArticulos.SelectedRows[0].Cells[2].Value.ToString() + "] "  + DgvArticulos.SelectedRows[0].Cells[4].Value.ToString() + "?", "Limpiar artículos", MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+                      if (result == DialogResult.Yes)
+                      {
+                          DgvArticulos.Rows.Remove(DgvArticulos.SelectedRows[0]);
+                          SumArticulos();
+                      }
+                   
+                  }
+              }
+          }
+
+          private void btnModificarArticulo_Click(object sender, EventArgs e)
+          {
+              if (DgvArticulos.SelectedRows.Count == 0)
+              {
+                  MessageBox.Show(this, "Por favor seleccione el artículo que desea modificar.", "Modificar artículo");
+
+              }
+
+              else
+
+              {
+
+                  if (DgvArticulos.SelectedRows[0].Cells[0].Value.ToString() == "1")
+                  {
+                      MessageBox.Show("Este artículo no puede ser eliminado ya que ha sido procesado satisfactoriamente.", "Quitar artículo");
+                  }
+
+                  else
+
+                  {
+
+                       DialogResult result = MessageBox.Show(this,"Estás seguro que deseas modificar el artículo [" + DgvArticulos.SelectedRows[0].Cells[2].Value.ToString() + "] "  + DgvArticulos.SelectedRows[0].Cells[4].Value.ToString() + "?", "Modificar artículo",MessageBoxButtons.YesNo,MessageBoxIcon.Information);
+                       if (result == DialogResult.Yes)
+                       {
+
+                           Ds1.Clear();
+                           MyConnection.Open();
+                           cmd = new MySqlCommand("SELECT idarticulos,descripcion,idsubcategoria,precio,imagen from restaurant.articulos where idarticulos='" + DgvArticulos.SelectedRows[0].Cells[2].Value.ToString() + "'", MyConnection);
+                           Adaptador = new MySqlDataAdapter(cmd);
+                           Adaptador.Fill(Ds1, "articulos");
+                           MyConnection.Close();
+
+                           DataTable dt = Ds1.Tables["articulos"];
+
+                           lblIDArticulo.Text = dt.Rows[0][0].ToString();
+                           lblArticulo.Text = dt.Rows[0][1].ToString();
+
+                           bool ExistFile = System.IO.File.Exists(dt.Rows[0][4].ToString());
+                           Image img;
+
+                           if (ExistFile)
+                           {
+                               FileStream Wfile = new FileStream(dt.Rows[0][4].ToString(), FileMode.Open, FileAccess.Read);
+                               img = System.Drawing.Image.FromStream(Wfile);
+                           }
+
+                           else
+                           {
+                               img = Properties.Resources.f752abb3_1b49_4f99_b68a_7c4d77b45b40_1_39d6c524f6033c7c58bd073db1b99786;
+                           }
+
+                           PanelArticuloSeleccionado.ContentImage = ResizeImage(img, PanelArticuloSeleccionado.Width, PanelArticuloSeleccionado.Height);
+                           txtCant.Value = Convert.ToDecimal(DgvArticulos.SelectedRows[0].Cells[3].Value.ToString());
+                           lblPrecioSeleccionado.Text = Convert.ToDouble(dt.Rows[0][3].ToString()).ToString("C");
+                           DgvArticulos.Rows.Remove(DgvArticulos.SelectedRows[0]);
+                           SumArticulos();
+
+                       }
+                     
+                  }
+                 
+
+
+              }
+            
+          }
+
 
 
 
