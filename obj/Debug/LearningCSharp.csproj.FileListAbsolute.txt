@@ -1,0 +1,29 @@
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\bin\Debug\LearningCSharp.exe.config
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\bin\Debug\LearningCSharp.exe
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\bin\Debug\LearningCSharp.pdb
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.Form1.resources
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.Properties.Resources.resources
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.csproj.GenerateResource.Cache
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.exe
+C:\Users\Luís Miguel Pérez\AppData\Local\Temporary Projects\LearningCSharp\obj\Debug\LearningCSharp.pdb
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.exe.config
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.exe.manifest
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.application
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.exe
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.pdb
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.frm_mesas.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.frm_menu.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.frm_propietario_cuenta.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.frm_setups.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.Properties.Resources.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.frm_start.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.UltraButton.resources
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.csproj.GenerateResource.Cache
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.exe.licenses
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.TrustInfo.xml
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.exe.manifest
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.application
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.exe
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.pdb
+C:\Users\Luís Miguel Pérez\Documents\Visual Studio 2012\Projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.csprojResolveAssemblyReference.cache
